@@ -1,6 +1,6 @@
 import React from "react";
 
-const item = [
+const items = [
   { carName: "Granduer", carPrice: 4500, carDetail: "graceful" },
   { carName: "BMW", carPrice: 7800, carDetail: "functional high" },
   { carName: "Benz", carPrice: 9200, carDetail: "gorgeous" },
@@ -20,7 +20,7 @@ const Car = () => {
   return (
     <div>
       <h2>Car List</h2>
-      {item.map((e, i) => (
+      {items.map((e, i) => (
         <CarItem item={e} index={i} />
       ))}
     </div>
